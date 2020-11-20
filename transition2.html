@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> transition</title>
+<style>
+div{
+background:orange;
+color:white;
+font-family:arial;
+width:300px;
+margin-top:20px;
+padding:20px;
+transition:width 2s;
+}
+.one:hover{
+width:500px;
+transition-timing-function:linear;
+}
+.two:hover{
+width:500px;
+transition-timing-function:linear;
+}
+.three:hover{
+width:500px;
+transition-timing-function:linear;
+}
+.four:hover{
+width:500px;
+transition-timing-function:linear;
+}
+.five:hover{
+width:500px;
+transition-timing-function:linear;
+}
+
+</style>
+</head>
+<body>
+
+<div class="one">
+linear
+</div>
+
+<div class="two">
+ease
+</div>
+
+<div class="three">
+ease-in
+</div>
+
+<div class="four">
+ease-out
+</div>
+
+<div class="five" >
+ease-in-out
+</div>
+
+
+
+</body>
+</html>

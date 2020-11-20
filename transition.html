@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>transition</title>
+		 <style>
+		 div{
+		 		 width:100px;
+		 background:orange;
+		 color:white;
+		 padding:40px;
+		 margin-top:50px;
+		 transition:width 2s;
+		 }
+		 
+
+		 		 .one:hover{
+                      width:500px;
+					  transition-timing-function:linear;
+					  text-align:center;
+		 }
+		 
+		 		 .two:hover{
+                      width:500px;
+					  transition-timing-function:ease;
+		 }
+		 
+		 		 .three:hover{
+                      width:500px;
+					  transition-timing-function:ease-in;
+		 }
+		 
+		 		 .four:hover{
+                      width:500px;
+					  transition-timing-function:ease-out;
+		 }
+		 
+		 		 .five:hover{
+                      width:500px;
+					  transition-timing-function:ease-in-out;
+		 }
+		 
+		 
+		 </style>
+     </head>
+	<body>
+	
+	
+	
+	    <div class="one">linear</div>
+	<div class="two">ease</div>
+		<div class="three">ease-in</div>
+	<div class="four">ease-out</div>
+		<div class="five">ease-in-out</div>
+	
+		
+		
+	</body>
+	 
+</html>

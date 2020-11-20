@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+        <title>brigate home page</title>
+		
+		<style>
+		
+		*{
+		margin:0px;
+		padding:0px;
+		}
+		
+		section {
+        padding: 80px 0px;
+        }
+		
+		.topbarmain {
+        background: #f5f6f6f6;
+        }
+
+        .container {
+		width: 1170px;margin: auto;
+		}
+
+        .peswrapper {
+        overflow: hidden;
+        }
+
+        .phone {
+        width: 200px;
+        height: 32px;
+        float: left;
+        padding: 11px 0px 0px 0px;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        }
+
+        .email {
+        width: 768px;
+        height: 32px;
+        float: left;
+        padding: 11px 0px 0px 0px;
+        }
+
+        .social {
+        width: 200px;
+        height: 43px;
+        float: left;
+        padding: 0px 0px 0px 0px;
+        }
+
+        .social a {
+        padding: 11px 22px 15px 23px;
+        border-left: 1px solid #ddd;
+        }
+
+        .social a i {
+        font-size: 18px;
+        margin-top: 10px;
+        }
+
+        .social a:last-child {
+        border-right: 1px solid #ddd;
+        }
+
+        .email i {
+        margin-left: 8px;
+        }
+
+        .email i {
+        color: #ff5200;
+        }
+
+        .phone i {
+        color: #ff5200;
+        }
+
+        .social i {
+        color: black;
+        }
+
+        .social i:hover {
+        color: #ff5200;
+        transition: .5s;
+        }
+
+        .email i {
+        margin-right: 8px;
+        }
+
+        .phone i {
+        margin-left: 8px;
+        margin-right: 8px;
+        }
+		
+		.logomenuwrapper {
+        overflow: hidden;
+        width: 100%;
+        }
+
+        .logo {
+        width: 150px;
+        float: left;
+        margin-top: 20px;
+        }
+
+        .menu {
+        width: 612px;
+        float: right;
+        }
+		
+		ul.menulist a:hover {
+        color: #ff5200;
+        cursor: pointer;
+        transition: .5s;
+        }
+
+        ul.menulist li {
+        list-style: none;
+        float: left;
+        padding: 17px 3px 0px 0px;
+        font-size: 17px;
+        font-family: arial;
+        font-weight: 600;
+        margin-right: 26px;
+        margin-top: 20px;
+        }
+
+        ul.menulist li a {
+        text-decoration: none;
+        color: #5c5c5c;
+        }
+
+        ul.menulist a:last-child {
+        margin-right: 0px;
+        }
+
+        ul.menulist a:last-child {
+        }
+
+        ul.menulist li:last-child {
+        margin-right: 0px;
+        }
+		
+		.homeslider {
+        background: url(slide1.jpg);
+        background-repeat: no-repeat;
+        background-position: 100%;
+        padding: 0px;
+        }
+
+        .slidercontains h1 {
+        font-family: arial;
+        width: 572px;
+        font-size: 55px;
+        color: white;
+        margin-bottom: 22px;
+        padding: 100px 0px 0px 0px;
+        }
+
+        .slidercontains p {
+        width: 500px;
+        font-size: 20px;
+        line-height: 37px;
+        color: white;
+        margin-bottom: 36px;
+        font-family: arial;
+        }
+
+        button.sliderworkbtn {
+        padding: 13px 25px;
+        font-size: 15px;
+        background: #ff5200;
+        border: 1px solid white;
+        margin-bottom: 150px;
+        font-family: arial;
+        color: white;
+        }
+		
+		button.sliderworkbtn:hover {
+        background: black;
+        cursor: pointer;
+        transition: .5s;
+        }
+		
+		section.variousEngineearing {
+        background: #f5f6f6f6;
+        }
+
+        .variousEngineearingsingleboxwrapper {
+        overflow: hidden;
+        }
+
+        .engicon {
+        width: 55px;
+        font-size: 40px;
+        margin: auto;
+        margin-bottom: 25px;
+        margin-top: 45px;
+        color: #ff5200;
+        }
+
+        .Engineearingsinglebox {
+        width: 260px;
+        border: 1px solid white;
+        background: white;
+        float: left;
+        margin-right: 40px;
+        }
+		
+		.Engineearingsinglebox:last-child {
+        margin-right: 0px;
+        }
+
+       .Engineearingsinglebox h2 {
+       font-family: arial;
+       line-height: 32px;
+       font-size: 22px;
+       text-align: center;
+       margin-bottom: 20px;
+       }
+
+       .Engineearingsinglebox p {
+       font-size: 19px;
+       text-align: center;
+       color: #777;
+       margin-bottom: 28px;
+       line-height: 28px;
+       font-family: arial;
+       }
+
+       .englarnmore {
+       width: 100px;
+       margin: auto;
+       margin-bottom: 40px;
+       }
+
+       .englarnmore a {
+       text-decoration: none;
+       color: #ff5200;
+       }
+
+       .englarnmore i {
+       font-size: 12px;
+       }
+	   .Engineearingsinglebox:hover {
+       background: #ff5200;
+       transition: .5s;
+       }
+
+      .Engineearingsinglebox:hover a{
+      color: white;
+      transition: .5s;
+      }
+
+      .Engineearingsinglebox:hover h2 {
+      color: white;
+      transition: .5s;
+      }
+
+      .Engineearingsinglebox:hover p {
+      color: white;
+      transition: .5s;
+      }
+	  
+	  .Engineearingsinglebox:hover i.fas.fa-ambulance {
+      color: white;
+      transition: .5s;
+      }
+	  
+	  .imganddiscriptionwrapper {
+      overflow: hidden;
+      }
+
+      .teamworkimage {
+      width: 570px;
+      float: left;
+      }
+
+      .teamworkimage img {
+      width: 100%;
+      }
+
+      .teamworkdiscription {
+      width: 570px;
+      float: right;
+      }
+
+      .teamworkdiscription h2 {
+      font-size: 32px;
+      margin-left: 53px;
+      margin-bottom: 35px;
+      width: 517px;
+      font-family: arial;
+      }
+
+      .teamworkdiscription p {
+      font-size: 19px;
+      line-height: 31px;
+      margin-left: 53px;
+      color: #777;
+      width: 517px;
+      margin-bottom: 35px;
+      font-family: arial;
+      }
+
+      .pointswrapper {
+      overflow: hidden;
+      }
+
+      .point1 {
+      width: 270px;
+      float: left;
+      margin-left: 53px;
+      font-family: arial;
+      }
+
+      .point1 li {
+      list-style: none;
+      line-height: 40px;
+      }
+
+      .point1 a {
+      text-decoration: none;
+      color: #777;
+      font-size: 19px;
+      }
+
+      .point1 i {
+      font-size: 13px;
+      color: #777;
+      }
+
+      .point2 {
+      float: right;
+      font-family: arial;
+      }
+
+      .point2 li {
+      list-style: none;
+      line-height: 40px;
+      }
+
+      .point2 a {
+	  text-decoration: none;font-size: 19px;color: #777;
+	  }
+
+      .point2 i {
+      font-size: 13px;
+      }
+
+      button.teamworkbtn {
+      margin-top: 35px;
+      padding: 14px 31px;
+      margin-left: 53px;
+      background: #ff5200;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      font-weight: 600;
+      }
+	  
+	  .point1 a:hover {
+      color: #ff5200;
+      transition: .5s;
+      }
+	  
+	  .point2 a:hover {
+      color: #ff5200;
+      transition: .5s;
+      }
+	  
+	  button.teamworkbtn:hover {
+      background: black;
+      transition: .5s;
+      }
+	  
+	  section.count {
+      background: linear-gradient(#0000008c,#0000008c),url(whychoose.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      }
+
+      .singlecountwrapper {
+      overflow: hidden;
+      }
+
+      .counticon {
+      width: 64px;
+      font-size: 50px;
+      color: white;
+      margin: auto;
+      }
+
+      .singleboxcount h2 {
+      font-size: 50px;
+      color: white;
+      font-family: arial;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      }
+
+      .singleboxcount p {
+      font-size: 21px;
+      color: white;
+      text-align: center;
+      font-family: arial;
+      }
+
+      .singleboxcount {
+      width: 275px;
+      float: left;
+      }
+	  
+	  .singleboxcount {
+      width: 275px;
+      float: left;
+      margin-right: 23px;
+      }
+	  
+	  .singleboxcount:last-child {
+      margin-right: 0px;
+      } 
+	  
+	  section.project {
+      background: #f5f6f6f6;
+      }
+
+      .projecttitile {
+      width: 514px;
+      margin: auto;
+      }
+
+      .projecttitile h1 {
+      font-size: 30px;
+      text-align: center;
+      font-family: arial;
+      }
+
+      .projecttitile p {
+      font-size: 19px;
+      text-align: center;
+      margin-top: 18px;
+      margin-bottom: 49px;
+      font-family: arial;
+      color: #777;
+      line-height: 32px;
+      }
+
+      .singleprojectimgwrapper {
+      overflow: hidden;
+      }
+
+      .singleprojectimg {
+      width: 273px;
+      float: left;
+      margin-right: 26px;
+      }
+	  
+	  .singleprojectimg:last-child {
+       margin-right: 0px;
+       }
+
+      .singleprojectimg img {
+      width: 100%;
+      }
+
+      .singleprojectdetails h3 {
+      font-size: 21px;
+      font-family: arial;
+      margin-top: 23px;
+      text-align: center;
+      }
+
+      .singleprojectdetails p {
+      font-size: 17px;
+      font-family: arial;
+      margin-top: 7px;
+      line-height: 23px;
+      color: #777;
+      text-align: center;
+      letter-spacing: 1px;
+      }
+	  
+	  .sinlepriceplanbox h2 {
+      font-size: 24px;
+      font-family: arial;
+      width: 150px;
+      margin-top: 40px;
+      margin-left: 27px;
+      }
+
+      .sinlepriceplanbox h1 {
+      font-size: 40px;
+      font-family: arial;
+      margin-top: 7px;
+      margin-bottom: 20px;
+      margin-left: 27px;
+      }
+
+      .sinlepriceplanbox h1 span {
+      font-size: 23px;
+      font-family: arial;
+      }
+
+      .sinlepriceplanbox {
+      width: 350px;
+      border: 1px solid #ddd;
+	  float:left;
+      }
+
+      .sinlepriceplanbox li {
+	  list-style: none;
+	  font-size: 16.5px;
+	  font-family: arial;
+	  letter-spacing: 1px;
+	  color: #888;
+	  margin-bottom: 23px;
+	  margin-left: 27px;
+	  }
+
+      .sinlepriceplanbox li i {
+      font-size: 12px;
+      margin-right: 12px;
+      color: #ff5200;
+      }
+
+      button.pricebtn {
+      margin-left: 27px;
+      padding: 12px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: none;
+      background: #ff5200;
+      color: white;
+      margin-bottom: 40px;
+      margin-top: 20px;
+      }
+
+      .sinlepriceplanboxwrapper {
+      overflow: hidden;
+      }
+	  
+	  .sinlepriceplanbox {
+      width: 350px;
+      border: 1px solid #ddd;
+      float:left;
+      margin-right: 57px;
+      }
+	  
+	  .sinlepriceplanbox:last-child {
+      margin-right: 0px;
+      }
+	  
+	  button.pricebtn:hover {
+      background: black;
+      transition: .5s;
+      }
+	  
+	  
+		
+		</style>
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	
+	</head>
+	
+	<header class="topbar">
+	
+	    <div class="topbarmain">
+	
+	        <div class="container">
+		
+		        <div class="peswrapper">
+		
+		            <div class="phone">
+			
+			        <i class="fas fa-phone"></i> Phone: +(98) 888 7777
+			
+			        </div>
+			
+			        <div class="email">
+			
+			        <i class="fas fa-envelope-square"></i> Email: sample-email@example.com
+			
+			        </div>
+			
+			        <div class="social">
+			
+			        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+			
+			        </div>
+			
+			    </div>
+		
+		    </div>
+		
+		</div>
+		
+		<div class="menubar">
+		
+		    <div class="container">
+			
+			    <div class="logomenuwrapper">
+				
+				    <div class="logo">
+					
+					<img src="logo.svg"/>
+					
+					</div>
+					
+					<div class="menu">
+					
+					<ul class="menulist">
+					
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PAGES</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">PROJECTS</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+					
+					</ul>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</header>
+	
+	<section class="homeslider">
+	
+	    <div class="container">
+		
+		    <div class="slidercontains">
+			
+			<h1>Best Quality Steel For Construction</h1>
+			<p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem.</p>
+			<button class="sliderworkbtn">WORK WITH US</button>
+			
+			</div>
+		
+		</div>
+	
+	</section>
+	
+	<section class="variousEngineearing">
+	
+	    <div class="container">
+		
+		    <div class="variousEngineearingsingleboxwrapper">
+			
+			    <div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+				
+				<div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+				
+				<div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+				
+				<div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</section>
+	
+	<section class="teamwork">
+	
+	    <div class="container">
+	
+	    <div class="imganddiscriptionwrapper">
+		
+		    <div class="teamworkimage">
+			
+			    <img src="our-project.jpg"/>
+			
+			</div>
+			
+			<div class="teamworkdiscription">
+			
+			    <h2>WORK WITH OUR TEAMS</h2>
+				<p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor condimentum. Proin viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat</p>
+			
+			    <div class="pointswrapper">
+			
+			        <div class="point1">
+				
+				        <ul>
+					
+					    <li><a href="#"><i class="fas fa-greater-than"></i> Building Quality </a></li>
+					    <li><a href="#"><i class="fas fa-greater-than"></i> Honest Advisors </a></li>
+					    <li><a href="#"><i class="fas fa-greater-than"></i> Building Quality </a></li>
+					
+					    </ul>
+				
+				    </div>
+				    <div class="point2">
+				
+				        <ul>
+					
+					    <li><a href="#"><i class="fas fa-greater-than"></i> Performances Team </a></li>
+					    <li><a href="#"><i class="fas fa-greater-than"></i> Work Solutions </a></li>
+					    <li><a href="#"><i class="fas fa-greater-than"></i> Work & Deadline </a></li>
+					
+					    </ul>
+				
+				    </div>
+			
+			    </div>
+				
+				<button class="teamworkbtn">GET START</button>
+			
+			</div>
+		
+		</div>
+		</div>
+	
+	</section>
+	
+	<section class="count">
+	
+	    <div class="container">
+		
+		    <div class="singlecountwrapper">
+			
+			    <div class="singleboxcount">
+				
+				    <div class="counticon">
+					
+					<i class="fas fa-users"></i>
+					
+					</div>
+					
+					<h2>1200</h2>
+					<p>HAPPINESS CUSTOMERS</p>
+				
+				</div>
+				
+				<div class="singleboxcount">
+				
+				    <div class="counticon">
+					
+					<i class="fas fa-users"></i>
+					
+					</div>
+					
+					<h2>1200</h2>
+					<p>HAPPINESS CUSTOMERS</p>
+				
+				</div>
+				
+				<div class="singleboxcount">
+				
+				    <div class="counticon">
+					
+					<i class="fas fa-users"></i>
+					
+					</div>
+					
+					<h2>1200</h2>
+					<p>HAPPINESS CUSTOMERS</p>
+				
+				</div>
+				
+				<div class="singleboxcount">
+				
+				    <div class="counticon">
+					
+					<i class="fas fa-users"></i>
+					
+					</div>
+					
+					<h2>1200</h2>
+					<p>HAPPINESS CUSTOMERS</p>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</section>
+	
+	<section class="project">
+	
+	    <div class="container">
+		
+		    <div class="projecttitile">
+			
+			    <h1>MORE FROM US</h1>
+				<p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+			
+			</div>
+			
+			<div class="singleprojectimgwrapper">
+			
+			    <div class="singleprojectimg">
+				
+				    <img src="service-item1.jpg"/>
+					
+					<div class="singleprojectdetails">
+				
+				    <h3>PROJECT DEADLINE</h3>
+					<p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+				
+				    </div>
+				
+				</div>
+
+                <div class="singleprojectimg">
+				
+				    <img src="service-item2.jpg"/>
+					
+					<div class="singleprojectdetails">
+				
+				    <h3>CONSTRUCTION ACTIVITY</h3>
+					<p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+				
+				    </div>
+				
+				</div>
+
+                <div class="singleprojectimg">
+				
+				    <img src="service-item3.jpg"/>
+					
+					<div class="singleprojectdetails">
+				
+				    <h3>CONSTRUCTION TEAM</h3>
+					<p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+				
+				    </div>
+				
+				</div>
+
+                <div class="singleprojectimg">
+				
+				    <img src="service-item4.jpg"/>
+					
+					<div class="singleprojectdetails">
+				
+				    <h3>CONSTRUCTION TEAM</h3>
+					<p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+				
+				    </div>
+				
+				</div>				
+			
+			</div>
+		
+		</div>
+	
+	</section>
+	
+	<section>
+	
+	    <div class="container">
+		
+		    <div class="projecttitile">
+			
+			    <h1>PRICE PLAN</h1>
+				<p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+			
+			</div>
+			
+			<div class="sinlepriceplanboxwrapper">
+			
+			    <div class="sinlepriceplanbox">
+				
+				    <h2>START</h2>
+				    <h1>$59 <span>/m</span></h1>
+					
+					<li> <i class="fas fa-check"></i>Build with advance business</li>
+					<li> <i class="fas fa-check"></i>Customizing to builder</li>
+					<li> <i class="fas fa-check"></i>Best agency market</li>
+					<li> <i class="fas fa-check"></i>Customer Service</li>
+					<li> <i class="fas fa-check"></i>Up to 1000 Worker</li>
+					<li> <i class="fas fa-check"></i>Unlimited Project</li>
+					<li> <i class="fas fa-check"></i>Build with longer terms</li>
+					
+					<button class="pricebtn">GET STAETED</button>
+				
+				</div>
+				
+				<div class="sinlepriceplanbox">
+				
+				    <h2>PRO</h2>
+				    <h1>$149 <span>/m</span></h1>
+					
+					<li> <i class="fas fa-check"></i>Build with advance business</li>
+					<li> <i class="fas fa-check"></i>Customizing to builder</li>
+					<li> <i class="fas fa-check"></i>Best agency market</li>
+					<li> <i class="fas fa-check"></i>Customer Service</li>
+					<li> <i class="fas fa-check"></i>Up to 1000 Worker</li>
+					<li> <i class="fas fa-check"></i>Unlimited Project</li>
+					<li> <i class="fas fa-check"></i>Build with longer terms</li>
+					
+					<button class="pricebtn">GET STAETED</button>
+				
+				</div>
+				
+				<div class="sinlepriceplanbox">
+				
+				    <h2>PREMIUM</h2>
+				    <h1>$179 <span>/m</span></h1>
+					
+					<li> <i class="fas fa-check"></i>Build with advance business</li>
+					<li> <i class="fas fa-check"></i>Customizing to builder</li>
+					<li> <i class="fas fa-check"></i>Best agency market</li>
+					<li> <i class="fas fa-check"></i>Customer Service</li>
+					<li> <i class="fas fa-check"></i>Up to 1000 Worker</li>
+					<li> <i class="fas fa-check"></i>Unlimited Project</li>
+					<li> <i class="fas fa-check"></i>Build with longer terms</li>
+					
+					<button class="pricebtn">GET STAETED</button>
+				
+				</div>
+			
+			</div>
+			
+		
+		</div>
+	
+	</section>
+
+
+</html>

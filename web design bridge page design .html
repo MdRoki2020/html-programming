@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+	
+        <title>brigate home page</title>
+		
+		<style>
+		
+		*{
+		margin:0px;
+		padding:0px;
+		}
+		
+		section {
+        padding: 80px 0px;
+        }
+		
+		.topbarmain {
+        background: #f5f6f6f6;
+        }
+
+        .container {
+		width: 1170px;margin: auto;
+		}
+
+        .peswrapper {
+        overflow: hidden;
+        }
+
+        .phone {
+        width: 200px;
+        height: 32px;
+        float: left;
+        padding: 11px 0px 0px 0px;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        }
+
+        .email {
+        width: 768px;
+        height: 32px;
+        float: left;
+        padding: 11px 0px 0px 0px;
+        }
+
+        .social {
+        width: 200px;
+        height: 43px;
+        float: left;
+        padding: 0px 0px 0px 0px;
+        }
+
+        .social a {
+        padding: 11px 22px 15px 23px;
+        border-left: 1px solid #ddd;
+        }
+
+        .social a i {
+        font-size: 18px;
+        margin-top: 10px;
+        }
+
+        .social a:last-child {
+        border-right: 1px solid #ddd;
+        }
+
+        .email i {
+        margin-left: 8px;
+        }
+
+        .email i {
+        color: #ff5200;
+        }
+
+        .phone i {
+        color: #ff5200;
+        }
+
+        .social i {
+        color: black;
+        }
+
+        .social i:hover {
+        color: #ff5200;
+        transition: .5s;
+        }
+
+        .email i {
+        margin-right: 8px;
+        }
+
+        .phone i {
+        margin-left: 8px;
+        margin-right: 8px;
+        }
+		
+		.logomenuwrapper {
+        overflow: hidden;
+        width: 100%;
+        }
+
+        .logo {
+        width: 150px;
+        float: left;
+        margin-top: 20px;
+        }
+
+        .menu {
+        width: 612px;
+        float: right;
+        }
+		
+		ul.menulist a:hover {
+        color: #ff5200;
+        cursor: pointer;
+        transition: .5s;
+        }
+
+        ul.menulist li {
+        list-style: none;
+        float: left;
+        padding: 17px 3px 0px 0px;
+        font-size: 17px;
+        font-family: arial;
+        font-weight: 600;
+        margin-right: 26px;
+        margin-top: 20px;
+        }
+
+        ul.menulist li a {
+        text-decoration: none;
+        color: #5c5c5c;
+        }
+
+        ul.menulist a:last-child {
+        margin-right: 0px;
+        }
+
+        ul.menulist a:last-child {
+        }
+
+        ul.menulist li:last-child {
+        margin-right: 0px;
+        }
+		
+		.homeslider {
+        background: url(slide1.jpg);
+        background-repeat: no-repeat;
+        background-position: 100%;
+        padding: 0px;
+        }
+
+        .slidercontains h1 {
+        font-family: arial;
+        width: 572px;
+        font-size: 55px;
+        color: white;
+        margin-bottom: 22px;
+        padding: 100px 0px 0px 0px;
+        }
+
+        .slidercontains p {
+        width: 500px;
+        font-size: 20px;
+        line-height: 37px;
+        color: white;
+        margin-bottom: 36px;
+        font-family: arial;
+        }
+
+        button.sliderworkbtn {
+        padding: 13px 25px;
+        font-size: 15px;
+        background: #ff5200;
+        border: 1px solid white;
+        margin-bottom: 150px;
+        font-family: arial;
+        color: white;
+        }
+		
+		button.sliderworkbtn:hover {
+        background: black;
+        cursor: pointer;
+        transition: .5s;
+        }
+		
+		section.variousEngineearing {
+        background: #f5f6f6f6;
+        }
+
+        .variousEngineearingsingleboxwrapper {
+        overflow: hidden;
+        }
+
+        .engicon {
+        width: 55px;
+        font-size: 40px;
+        margin: auto;
+        margin-bottom: 25px;
+        margin-top: 45px;
+        color: #ff5200;
+        }
+
+        .Engineearingsinglebox {
+        width: 260px;
+        border: 1px solid white;
+        background: white;
+        float: left;
+        margin-right: 40px;
+        }
+		
+		.Engineearingsinglebox:last-child {
+        margin-right: 0px;
+        }
+
+       .Engineearingsinglebox h2 {
+       font-family: arial;
+       line-height: 32px;
+       font-size: 22px;
+       text-align: center;
+       margin-bottom: 20px;
+       }
+
+       .Engineearingsinglebox p {
+       font-size: 19px;
+       text-align: center;
+       color: #777;
+       margin-bottom: 28px;
+       line-height: 28px;
+       font-family: arial;
+       }
+
+       .englarnmore {
+       width: 100px;
+       margin: auto;
+       margin-bottom: 40px;
+       }
+
+       .englarnmore a {
+       text-decoration: none;
+       color: #ff5200;
+       }
+
+       .englarnmore i {
+       font-size: 12px;
+       }
+	   .Engineearingsinglebox:hover {
+       background: #ff5200;
+       transition: .5s;
+       }
+
+      .Engineearingsinglebox:hover a{
+      color: white;
+      transition: .5s;
+      }
+
+      .Engineearingsinglebox:hover h2 {
+      color: white;
+      transition: .5s;
+      }
+
+      .Engineearingsinglebox:hover p {
+      color: white;
+      transition: .5s;
+      }
+	  
+	  .Engineearingsinglebox:hover i.fas.fa-ambulance {
+      color: white;
+      transition: .5s;
+      }
+	  
+		
+		</style>
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	
+	</head>
+	
+	<header class="topbar">
+	
+	    <div class="topbarmain">
+	
+	        <div class="container">
+		
+		        <div class="peswrapper">
+		
+		            <div class="phone">
+			
+			        <i class="fas fa-phone"></i> Phone: +(98) 888 7777
+			
+			        </div>
+			
+			        <div class="email">
+			
+			        <i class="fas fa-envelope-square"></i> Email: sample-email@example.com
+			
+			        </div>
+			
+			        <div class="social">
+			
+			        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+			
+			        </div>
+			
+			    </div>
+		
+		    </div>
+		
+		</div>
+		
+		<div class="menubar">
+		
+		    <div class="container">
+			
+			    <div class="logomenuwrapper">
+				
+				    <div class="logo">
+					
+					<img src="logo.svg"/>
+					
+					</div>
+					
+					<div class="menu">
+					
+					<ul class="menulist">
+					
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PAGES</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">PROJECTS</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="#"><i class="fas fa-search"></i></a></li>
+					
+					</ul>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</header>
+	
+	<section class="homeslider">
+	
+	    <div class="container">
+		
+		    <div class="slidercontains">
+			
+			<h1>Best Quality Steel For Construction</h1>
+			<p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem.</p>
+			<button class="sliderworkbtn">WORK WITH US</button>
+			
+			</div>
+		
+		</div>
+	
+	</section>
+	
+	<section class="variousEngineearing">
+	
+	    <div class="container">
+		
+		    <div class="variousEngineearingsingleboxwrapper">
+			
+			    <div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+				
+				<div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+				
+				<div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+				
+				<div class="Engineearingsinglebox">
+				
+				    <div class="engicon"><i class="fas fa-ambulance"></i></div>
+					<h2>ARCHITECTURE & ENGINEERING</h2>
+					<p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+					<div class="englarnmore"><a href="#">Learn More <i class="fas fa-arrow-right"></i></a></div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</section>
+
+
+</html>

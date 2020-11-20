@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title> basic page design</title>
+		<style>
+		*{
+		margin:0;
+		padding:0;
+		}
+		
+		h1{
+		text-align:center;
+		color:white;
+		}
+		
+		.block{
+    width: 326px;
+    background: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 4px;
+	animation-name:xoombox;
+	animation-duration:1.5s;
+		}
+		
+		.block:hover{
+		transition:1s all;
+		background:transparent;
+		color:white;
+		}
+		
+		.left_icon{
+    width: 50px;
+    font-size: 40px;
+    float: left;
+    margin-top: 5px;
+	color:orange;
+		}
+		
+		.right_contain{
+    width: 246px;
+    float: right;
+		}
+		
+		.service{
+		color:orange;
+		}
+		
+		.all_blocks{
+    width: 1064px;
+    margin: auto;
+    padding: 3px;
+		}
+		
+		.section_block1{
+		background:black;
+		}
+		
+		.section_block2{
+		
+		}
+		
+		.section_block2_our{
+		color:black;
+		}
+		
+		section{
+		padding:20px;
+		}
+		
+		.img_size{
+         height: 273px;
+         width: 396px;
+		}
+		
+		.img_box{
+        width: 398px;
+        float: left;
+        margin-left: 227px;
+		}
+		
+		.details{
+         width: 300px;
+         margin-left: 32px;
+         float: right;
+         margin-right: 200px;
+		}
+		
+		.img_box, .details{
+		display:inline-block;
+		}
+		
+		.img_and_details{
+		background:red;
+		width:1170px;
+		margin:auto;
+		}
+		
+		@keyframes xoombox{
+		from{transform:scale(0.1)}
+		to{transform:scale(1)}
+		}
+		
+		.roki{
+		margin-bottom:10px;
+		}
+		
+		.main_menu{
+		margin:0px;
+		padding:0px;
+		list-style:none;
+		float:right;
+		}
+		
+		nav{
+		background:white;
+		padding-top:20px;
+		padding-bottom:20px;
+		}
+		
+		.main_menu li{
+		display:inline-block;
+		background:orange;
+		color:white;
+		padding:15px;
+		}
+		
+		.main_menu li a{
+		text-decoration:none;
+		}
+		
+		.menudiv{
+		width:1170px;
+		margin:auto;
+		}
+		
+		
+		</style>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    </head>
+	<body>
+	
+	<nav>
+	<div class="menudiv">
+	<ul class="main_menu">
+	<li><a href="#">HOME</a></li>
+	<li><a href="#">SERVICE</a></li>
+	<li><a href="#">ABOUT</a></li>
+	<li><a href="#">PORTFOLO</a></li>
+	<li><a href="#">CONTRACTS</a></li>
+
+	</ul>
+	
+	<div>
+	
+	</nav>
+	
+    <section class="section_block1">
+	
+		<h1>OUR <span class="service">SERVICES</span></h1>
+	
+	<div class="all_blocks">
+	<div class="block">
+	
+		<div class="left_icon">
+	<i class="fas fa-code"></i>
+	</div>
+	<div class="right_contain">
+	<h3>GRAPHICS DESIGN</h3>
+	<p>qualified web designs and attrective effects which catches visitor eye's</p>
+	</div>
+	</div>
+	
+		<div class="block">
+	
+	<div class="left_icon">
+	<i class="fas fa-code"></i>
+	</div>
+	<div class="right_contain">
+	<h3>GRAPHICS DESIGN</h3>
+	<p>qualified web designs and attrective effects which catches visitor eye's</p>
+	</div>
+	</div>
+	
+		<div class="block">
+	
+	<div class="left_icon">
+	<i class="fas fa-code"></i>
+	</div>
+	<div class="right_contain">
+	<h3>GRAPHICS DESIGN</h3>
+	<p>qualified web designs and attrective effects which catches visitor eye's</p>
+	</div>
+	</div>
+	
+	</div>
+	
+		<div class="all_blocks">
+	<div class="block">
+	
+		<div class="left_icon">
+	<i class="fas fa-code"></i>
+	</div>
+	<div class="right_contain">
+	<h3>GRAPHICS DESIGN</h3>
+	<p>qualified web designs and attrective effects which catches visitor eye's</p>
+	</div>
+	</div>
+	
+		<div class="block">
+	
+	<div class="left_icon">
+	<i class="fas fa-code"></i>
+	</div>
+	<div class="right_contain">
+	<h3>GRAPHICS DESIGN</h3>
+	<p>qualified web designs and attrective effects which catches visitor eye's</p>
+	</div>
+	</div>
+	
+		<div class="block">
+	
+	<div class="left_icon">
+	<i class="fas fa-code"></i>
+	</div>
+	<div class="right_contain">
+	<h3>GRAPHICS DESIGN</h3>
+	<p>qualified web designs and attrective effects which catches visitor eye's</p>
+	</div>
+	</div>
+	
+	</div>
+	
+	</section>
+	
+	    <section class="section_block2">
+	
+		<h1><span class="section_block2_our">ABOUT</span> <span class="service">US</span></h1>
+	
+	<div class="img_box">
+	<img src="biker.jpg" class="img_size"/>
+	</div>
+	
+	<div class="img_and_details">
+	<div class="details">
+	<div class="roki">
+			<h3>ROKI</h3>
+	</div>		
+<p> ►Blood group : O+ <br/>
+►Hair colour : black and dark brown <br/>
+►Eyes colour : Dark brown <br/>
+►Lip : Natural<br/>
+►Skin tone: Naturally fair <br/>
+►Mood : Depends on your personality <br/>
+►Occupation: Student <br/>
+►Attitude : Simply at Stylish <br/>
+►Right or left : Right <br/>
+►Hair : Simple Style  <br/>
+►Glass : Auto: To protect me to sunlight <br/>
+►Season : Spring <br/>
+►Person : Parents <br/>
+
+	</div>
+	</div>
+	
+	</section>
+	
+	
+	</body>
+</html>
