@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>innerbar/sidebar</title>
+	<style type="text/css">
+	
+	body{
+	font-family:sans-serif;
+	margin:20px 40px;
+	}
+	.mainbox{
+	font-size:27px;
+	cursor:pointer;
+	transition:all .4s;
+	}
+	.sidemenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #222;
+    z-index: 1;
+    padding-top: 100px;
+    overflow-x: hidden;
+	transition:all .3s;
+    }
+	.sidemenu a {
+    padding: 8px 8px 8px 64px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #999;
+    display: block;
+    }
+	.sidemenu a:hover{
+	color:white;
+	}
+	.sidemenu .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+    }
+	
+	</style>
+  </head>
+  <body>
+    
+	<div class='mainbox' onclick="openfunction()">&#9776</div>
+	<div id='menu' class='sidemenu'>
+	
+	  <a href="#">Home</a>
+	  <a href="#">About</a>
+	  <a href="#">Contract</a>
+	  <a href="#">Login</a>
+	  <a href="#">Blog</a>
+	  <a href="#" class='closebtn' onclick="closefunction()">&times;</a>
+	
+	</div>
+	
+	<h1>This is Side bar</h1>
+	
+	
+	
+	<script type="text/javascript">
+	
+	function openfunction(){
+	document.getElementById('menu').style.width='300px';
+	document.getElementById('mainbox').style.marginLeft='300px';
+	}
+	
+	function closefunction(){
+	document.getElementById('menu').style.width='0px';
+	document.getElementById('mainbox').style.marginLeft='0px';
+	}
+	
+	</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
