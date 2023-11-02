@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar Practice</title>
+        <style>
+            .navBar {
+    background: purple;
+    text-align: center;
+    padding: 1% 7%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navBar a {
+    color: white;
+    font-size: 17px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.dropdownContainer {
+    display: inline;
+    position: relative;
+}
+
+.dropdownContent a {display: block;}
+
+.dropdownContent {
+    position: absolute;
+    min-width: 100px;
+    top: 30px;
+    right: 0px;
+    text-align: left;
+    background: purple;
+}
+
+.dropdownContent {
+    display: none;
+}
+
+.dropdownContainer:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a:hover {
+    background: gray;
+}
+        </style>
+    </head>
+    <body>
+        <div class="navBar">
+            <a href="#">Home</a>
+            <a href="#">Tutorial</a>
+            <a href="#">Blog</a>
+            <div class="dropdownContainer">
+
+                <a href="#">Contact Us</a>
+
+                <div class="dropdownContent">
+
+                    <a href="#">Facebook</a>
+                    <a href="#">Twiter</a>
+                    <a href="#">What's App</a>
+
+                </div>
+            </div>
+            <a href="#">About</a>
+        </div>
+    </body>
+</html>
